@@ -1,0 +1,171 @@
+
+*{
+	margin: 15px;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #1e2126;
+	margin:10px 10px 10px 10px;
+}
+
+
+h1 {
+	font-size: 66px;
+	font-weight: bold;
+	line-height: 80px;
+}
+
+
+h2 {
+	font-size: 48px;
+  }
+
+
+p {
+	font-size: 18px;
+	line-height: 1.8;
+	margin-bottom: 0;
+}
+
+
+section {
+	padding: 80px 0;	
+}
+
+footer {
+	padding: 10px;
+}
+
+
+
+nav {
+	background-color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	height: 150px;
+
+}
+
+hr {
+	width: 80%;
+	background-color: #5e6c6d;
+
+}
+
+.padre {
+	display: flex;
+	margin-left:20px;
+	margin-right: 20px;
+	align-items: center;
+}
+
+.hijo {
+	width: 50%;
+	
+}
+
+.parrafo {
+	margin-top: 8px;
+}
+
+.boton {
+	background-color: rgb(30, 33, 38);
+	color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    display: block;
+    width: 250px;
+    height: 50px;
+    padding-top: 6px; 
+    margin-top: 10px;
+	}
+
+.boton:hover{
+    color: #1e2126;
+    background-color: #d39d90;
+    text-decoration: none;
+  }
+
+
+.contact-button {
+	margin: 15px 15px 15px 15px;
+	padding: 10px;
+	font-weight: bold;
+	color: #002858;
+}
+
+.contact-button:hover {
+	text-decoration-line: black;
+	color: #8B8888;
+}
+
+.navbar {
+	background-color: white,
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+	min-height: 100px;
+}
+
+.nav-link {
+	color: #002858;
+}
+
+.nav-link:hover {
+	color: #8B8888;
+}
+
+.logo-brand {
+	min-width: 120px;
+	max-width: 150px;
+}
+
+.navbar-toggler {
+	font-size: 30px;
+}
+
+.navbar-toggler:focus {
+	outline: none;
+}
+
+
+
+@media (max-width: 575.98px) {
+
+	  h1 {
+	  		font-size: 40px;
+  			line-height: normal;} 
+
+  		h5 span {
+  			display: none;
+  		}
+  		
+  		}
+
+
+@media (max-width: 767.98px) {
+
+	h5 span {
+  			display: none;
+  		}
+
+  		 }
+
+
+@media (max-width: 991.98px) { 
+
+		h5 span {
+  			display: none;
+  		}
+
+  		 }
+
+@media (max-width: 1199.98px) { ... }
