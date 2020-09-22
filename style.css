@@ -40,7 +40,9 @@ p {
 
 
 section {
-	padding: 80px 0;	
+	padding: 80px 0;
+	margin-bottom: 0;
+	width: 100vw;	
 }
 
 footer {
@@ -248,6 +250,35 @@ hr {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #1e2126;
+}
+
+
+.cursos {
+	background-color: #364d53;
+	color: white;
+	font-weight: thin;
+	display: flex;
+	align-content: space-around;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	widows: 100%;
+
+
+}
+
+.cursos-hijo {
+	margin:0;
+}
+
+.pink-line {
+	width: 280px;
+	height: 2px;
+	background-color: rgb(211, 157,144);
+}
+
+.lista-cursos {
+	font-size: 12px;
 }
 
 
