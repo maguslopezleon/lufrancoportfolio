@@ -56,19 +56,47 @@ nav {
 	background-color: white;
 	margin-left: 10px;
 	margin-right: 10px;
+	widows: 100vw;
 	}
 
-.menu {
+.container {
 	display: flex;
-	justify-content: space-between;
-	height: 150px;
+	align-content: space-between;
+	height: 80px;
+	width: 1920px !important;
+	margin-left: 0;
+	margin-right: 0;
+
 
 }
+
+
+.navbar-expand-lg {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.hijo-menu {
+	height: 40px;
+}
+
 
 hr {
 	width: 80%;
 	background-color: #5e6c6d;
 
+}
+
+.nav-item {
+	font-size: 12px;
+	font-weight: bold;
+	margin:0;
+}
+
+.nav-link {
+	margin: 0;
 }
 
 .padre {
@@ -110,7 +138,7 @@ hr {
   }
 
 
-  .boton-cv {
+ .boton-cv {
 	background-color: rgb(30, 33, 38);
 	color:white;
     text-decoration: none;
@@ -148,8 +176,7 @@ hr {
 }
 
 .logo-brand {
-	min-width: 120px;
-	max-width: 150px;
+	width: 200px;
 }
 
 .navbar-toggler {
@@ -159,6 +186,15 @@ hr {
 .navbar-toggler:focus {
 	outline: none;
 }
+
+
+nav {
+	background-color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+	widows: 100vw;
+	}
+
 
 .foto-lu {
 	height: 624px;
@@ -178,7 +214,22 @@ hr {
 
 .educacion {
 	text-align: center;
+	margin-top: 150px;
 }
+
+.mis-proyectos {
+	text-align: left;
+	margin-top: 100px;
+	padding-left: 50px;
+}
+
+.div-charlas {
+	text-align: left;
+	margin-top: 100px;
+	padding-left: 50px;
+	background-color: #e2e2e2;
+}
+
 
 
 .timeline ul li {
@@ -306,10 +357,7 @@ hr {
 		margin-top: 10px;
 }
 
-.imagen-skills {
-	border-radius: 50%;
-	border-color: pink;
-}
+
 
 .portada-proyecto {
 	width: 150px;
@@ -318,14 +366,15 @@ hr {
 
 .proyectos {
 	display: flex;
-	align-content: space-between;
+	align-content: space-around;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 
 .proyectos-hijo {
 	width: 25%;
+	margin-bottom: 100px;
 }
 
 
@@ -336,12 +385,28 @@ hr {
 }
 
 
-.card {
+.tag {
 	text-align: center;
 	flex-wrap: wrap;
 	margin: 0;
-	background-color: #E2E2E2;
+	width: 100%;
+	background-color: #e2e2e2;
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+}
 
+.nombre-card {
+	font-weight: bold;
+	font-size: 20px;
+	color: #1e2126;
+	margin: 0;
+
+}
+
+.nombre-card:hover {
+	text-decoration: none;
+	color: #5e6c6d;
 }
 
 
@@ -350,12 +415,224 @@ hr {
 	display: inline-block;
 }
 
+
+.numero-card {
+	font-weight: bold;
+	font-size: 60px;
+	color: #d39d90;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: -25px;	
+
+}
+
+.numero-card:hover {
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 60px;
+	color: #d39d90;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: -25px;	
+
+}
+
+
+
+}
+
 .portada-proyecto {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+
+.congresos {
+	background-color: #E2E2E2;
+
+}
+
+.congresos-hijo {
+	width: 50px;
+	height: 50px;
+
+}
+
+
+.acordeon input {
+	display: none;
+}
+
+.acordeon__titulo {
+	display: block;
+	padding: 15px;
+	background-color: #e2e2e2;
+	color:#364d53;
+	border-bottom-style: solid;
+	border-color: #d39d90;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: left;
+	font-weight: bold;
+}
+
+.acordeon__titulo:hover {
+	background-color: rgba(255, 255, 255, .1);
+
+}
+
+.acordeon__contenido {
+	height: 0;
+	overflow: hidden;
+	margin: 0;
+	padding-left: 30px;
+	font-weight: thin;
+	transition: all 0.5s; 
+
+}
+
+
+.acordeon input:checked ~ .acordeon__contenido{
+	height: auto;
+	margin: 15px 0;
+}
+
+
+.foto-lu {
+	height: 624px;
+	width: 700px;
+}
+
+.congresos {
+	height: auto;
+	background-color: #E2E2E2;
+	display: flex;
+	margin-left:20px;
+	margin-right: 20px;
+	margin-bottom: 130px;
+	align-items: flex-start;
+	margin-top: 0;
+}
+
+
+.congresos-head {
+	height: 20px;
+	background-color: #E2E2E2;
+	display: flex;
+	margin-left:20px;
+	margin-right: 20px;
+	margin-bottom: 0;
+	align-items: flex-start;
+	margin-top: 150px;
+	flex-direction: column;
+	padding-bottom: 5;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+.contacto-head {
+	height: 20px;
+	background-color: white;
+	display: flex;
+	margin-left:20px;
+	margin-right: 20px;
+	margin-bottom: 0;
+	align-items: flex-start;
+	margin-top: 150px;
+	flex-direction: column;
+	padding-bottom: 5;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+.hijo-congresos {
+	width: 50%;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+}
+
+
+.contacto {
+	height: auto;
+	background-color: white;
+	display: flex;
+	margin-left:20px;
+	margin-right: 20px;
+	margin-bottom: 130px;
+	align-items: flex-start;
+	margin-top: 0;
+}
+
+
+.hijo-contacto {
+	width: 50%;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+}
+
+
+.pie {
+	display: flex;
+	justify-content: space-between;
+	align-items: space-between;
+	background-color: #1e2126;
+	color: white;
+	height: 300px;
+}
+
+
+.pie-hijo {
+	text-align: space-between;
+	align-content: space-between;
+	align-items: center;
+	width: 100%;
+	color: white;
+}
+
+.pie-hijo ul li a {
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.pie-hijo ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.ubicacion {
+	background: url('iconos/08_ubicacion_icon.svg') no-repeat;
+	height: 50px;
+	padding-left: 30px;
+	margin-left: 0;
+	text-align: left;
+
+}
+
+.whatsapp {
+	background: url('iconos/08_whatsapp_icon.svg') no-repeat;
+	height: 50px;
+	padding-left: 30px;
+	margin-left: 0;
+	text-align: left;
+
+}
+
+
+
+.logo-pie {
+	width: 120px;
+	height: auto;
+	display: inline-block;
+}
 
 
 

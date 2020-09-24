@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <title>Luciana Franco | UX Designer </title>
     <meta name="description" content="Portfolio UX - Luciana Franco">
   </head>
   <body>
-    <nav class="menu">
+    <!--<nav class="menu">
       <div class="hijo-menu">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="Isologo Luciana Franco UX Designer" width="" class="logo-brand"></a>
+        <a href="index.html"><img src="images/logo.svg" alt="Isologo Luciana Franco UX Designer" class="logo-brand"></a>
       </div>
       <div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,11 +43,47 @@
           </ul>         
       </div>
     </nav>
+    -->
+
+    <nav class="menu navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="Logo Luciana Franco" class="logo-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href=# id="inicio" >INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=# id="sobre mi">SOBRE MI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=# id="estudios">ESTUDIOS</a>
+             </li>
+            <li class="nav-item">
+              <a class="nav-link" href=# id="proyectos">PROYECTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=# id="charlas">CHARLAS</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href=# id="contacto">CONTACTO</a>
+            </li>                   
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
     <section id="hero-index">
       <div class="padre">
         <div class="hijo">
         <h1>Hola, soy Luciana!</h1>
-        <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, repellat error laudantium. Earum doloribus quibusdam pariatur possimus quasi libero tenetur a, modarum id esse aut nihil ut illo. Error, culpa. Eaque expedita et distError, culpa. Eaque expedita et distError, culpa. Eaque expedita et distError, culpa. Eaque expedita et distError, culpa. Eaque expedita et distError, culpa. Eaque expedita et distError, culpa. Eaque expedita et distError, culpa. Eaque expedita et distError, culpa. Eaque expedita et distError, culpa. Eaque expedita et distinctio perspiciatis nihil quibusdam, libero?</p>
+        <p class="parrafo">¡Hola! Mi nombre es Luciana Franco pero me podés decir Lu. Soy diseñadora UX UI nacida en Argentina, viviendo actualmente en Belo Horizonte, Brasil. <br> Te invito a recorrer mi sitio web para conocerme un poco más :)</p>
         <a href="#" class="boton-contratame">C O N T R A T A M E</a>
         </div>
         <div class="hijo">
@@ -144,9 +181,12 @@
         </ul>
       </div>
     </section>
+    <div class="educacion">
+      <h2>Mis skills</h2>
+    </div>
     <section class="skills">
       <div class="skills-hijo">
-        <img class="imagen-skills" src="iconos/04_software-icon.svg" alt="pictograma de una pantalla de un navegador">
+        <img class="iconos-skills" src="iconos/04_software-icon.svg" alt="pictograma de una pantalla de un navegador">
         <h6>SOFTWARE</h5>
         <ul class="skills-list">
           <li>Adobe XD</li>
@@ -179,54 +219,103 @@
         </ul>
       </div>
     </section>
-    <h4>TRABAJOS RECIENTES</h4>
-      <H2>MIS PROYECTOS</H2>
+    <div class="mis-proyectos">
+    <h3>TRABAJOS RECIENTES</h3>
+      <H2>Mis proyectos</H2>
+      </div>
     <section class="proyectos">      
       <div class="proyectos-hijo">
-        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">
-        
-        <div class="card">
-          <h3 class="nombre-card">Nombre proyecto</h3>
-          <hr class="linea-card">
-
+        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">        
+        <div class="tag">
+          <a href="#" class="numero-card">01</a>
+          <a href="#" class="nombre-card">Nombre proyecto      ───</a>
         </div>        
       </div>
       <div class="proyectos-hijo">
-        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">
-        <div class="card">
-          <h3 class="nombre-card">Nombre proyecto</h3>
-          <hr class="linea-card">
+        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">        
+        <div class="tag">
+          <a href="#" class="numero-card">02</a>
+          <a href="#" class="nombre-card">Nombre proyecto      ───</a>
         </div>        
       </div>
-      <div class="proyectos-hijo">
-        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">
-        <div class="card">
-          <h3 class="nombre-card">Nombre proyecto</h3>
-          <hr class="linea-card">
+            <div class="proyectos-hijo">
+        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">        
+        <div class="tag">
+          <a href="#" class="numero-card">03</a>
+          <a href="#" class="nombre-card">Nombre proyecto      ───</a>
         </div>        
       </div>
-      <div class="proyectos-hijo">
-        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">
-        <div class="card">
-          <h3 class="nombre-card">Nombre proyecto</h3>
-          <hr class="linea-card">
+            <div class="proyectos-hijo">
+        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">        
+        <div class="tag">
+          <a href="#" class="numero-card">04</a>
+          <a href="#" class="nombre-card">Nombre proyecto      ───</a>
         </div>        
       </div>
-      <div class="proyectos-hijo">
-        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">
-        <div class="card">
-          <h3 class="nombre-card">Nombre proyecto</h3>
-          <hr class="linea-card">
+            <div class="proyectos-hijo">
+        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">        
+        <div class="tag">
+          <a href="#" class="numero-card">05</a>
+          <a href="#" class="nombre-card">Nombre proyecto      ───</a>
         </div>        
       </div>
-      <div class="proyectos-hijo">
-        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">
-        <div class="card">
-          <h3 class="nombre-card">Nombre proyecto</h3>
-          <hr class="linea-card">
+            <div class="proyectos-hijo">
+        <img class="portada-proyecto" src="images/foto-lu.png" alt="Portada de proyecto">        
+        <div class="tag">
+          <a href="#" class="numero-card">06</a>
+          <a href="#" class="nombre-card">Nombre proyecto      ───</a>
         </div>        
       </div>
       
+    </section>
+    <section class="congresos-head">
+    <h3 style="padding-left: 15px;">CHARLAS</h3>
+    <h2 style="padding-left: 15px;">Congresos y voluntariados</h2>
+    </section>
+
+    <section class="congresos">
+      <div class="hijo-congresos">
+        <img class="foto-lu" src="images/foto-lu.png" alt="Foto de perfil Luciana Franco">
+      </div>
+      
+        <div class="acordeon">
+          <div class="acordeon__item">
+            <input type="radio" name="acordeon" id="item1" checked>
+            <label for="item1" class="acordeon__titulo">CONGRESOS</label>
+              <p class="acordeon__contenido"><b style="margin-left: 0;">• Ponente Women's Development Week</b> <br> Ponencia tendencias en el UX/UI después del COVID. <br>Globant, 2020.</p>
+              <p class="acordeon__contenido"><b style="margin-left: 0;">• Ponente Congreso Latinoamericano de Diseño</b> <br> Ponencia sobre las tendencias en el UX/UI en tiempos de COVID. <br>Universidad de Palermo, 2020.</p>
+              <p class="acordeon__contenido"><b style="margin-left: 0;">• The Developer's Conference Belo Horizonte</b> <br> Ponente. UNIBH 2019.</p>
+              
+              
+          </div>
+          <div class="acordeon__item">
+            <input type="radio" name="acordeon" id="item2">
+            <label for="item2" class="acordeon__titulo">VOLUNTARIADOS</label>  
+              <p class="acordeon__contenido"><b style="margin-left: 0;">• MULHERES UX - BELO HORIZONTE, BRASIL (2020 - actualidad)</b> <br> Creación de contenido relacionado al distanciamiento social para Brasil.<br>Ciclo de Charlas sobre UX gratuitas.</p>
+              <p class="acordeon__contenido"><b style="margin-left: 0;">• PLAC / CEFET - BELO HORIZONTE, BRASIL. (2018 - actualidad)</b><br>Cuidado de niños refugiados. Clases de portugués gratuitas para personas llegadas a Brasil en situación de refugio</p>
+              <p class="acordeon__contenido"><b style="margin-left: 0;">• AIESEC - BUENOS AIRES, ARGENTINA. (2018)</b><br>Sales Manager. Organizadora del Local Congress of Buenos Aires, responsable del diseño comunicacional</p>
+              
+          </div>
+        
+      </div>
+    </section>
+
+    <section class="contacto-head">
+    <h3 style="padding-left: 15px;">CONTACTO</h3>
+    <H2 style="padding-left: 15px;">Estemos en contacto</H2>
+    </section>
+
+    <section class="contacto">
+      <div class="hijo-contacto">
+        <img class="foto-lu" src="images/contacto.png" alt="Foto de perfil Luciana Franco">
+      </div>
+      <div class="hijo-contacto">
+        <h3>SOBRE MI</h3>
+        <h2>Esta soy yo</h2>
+        <p>Soy diseñadora UX/UI,  100% argentina aunque me gusta vivir en diferentes países. Me apasiona el mundo UX, la investigación de tendencias de experiencias de usuarios y amante de la moda. Me enfoco en soluciones de usabilidad y diseño responsivo, cada reto es un nuevo aprendizaje. Me gusta compartir mis conocimientos tanto en congresos como en la comunidad Onda UX de la que soy una de las fundadoras. Este es mi portfolio de trabajos realizados durante mi trayectoria profesional.
+        </p>
+        <a href="#" class="boton-cv">D E S C A R G A R   C V</a>
+      </div>
     </section>
 
 
@@ -235,17 +324,27 @@
 
 
 
-    <footer class="contenedor-footer">
-      <div class="elemento">
+
+    <footer class="pie">
+      <div class="pie-hijo" style="padding-left: 100px;">
+        <img class="logo-pie" src="images/logo.svg" alt="logo Luciana Franco">
         <ul>
-          <li class="list-inline-item footer-menu"><a href=#>Inicio</a></li>
-          <li class="list-inline-item footer-menu"><a href=#>Sobre mi</a></li>
-          <li class="list-inline-item footer-menu"><a href=#>Estudios</a></li>
-          <li class="list-inline-item footer-menu"><a href=#>Proyectos</a></li>
-          <li class="list-inline-item footer-menu"><a href=#>Charlas</a></li>
-          <li class="list-inline-item footer-menu"><a href=#>Contacto</a></li>
+          <li class="ubicacion">Viviendo en Belo Horizonte, Brasil</li>
+          <li class="whatsapp">+54 11 2600-0869</li>
         </ul>
-        <small class="elemento">Luciana Franco 2020. Todos los derechos reservados</small>
+        <a href="#"><img src="iconos/09_Linkedin_icon.svg" alt="logo LinkedIn"></a>
+        <a href="#"><img src="iconos/10_behance_icon.svg" alt="logo Behance"></a>
+        
+      </div>
+      <div class="pie-hijo" style="padding-left: 600px;">
+        <ul>
+          <li class="pie-lista"><a href=#>Inicio</a></li>
+          <li class="pie-lista"><a href=#>Sobre mi</a></li>
+          <li class="pie-lista"><a href=#>Estudios</a></li>
+          <li class="pie-lista"><a href=#>Proyectos</a></li>
+          <li class="pie-lista"><a href=#>Charlas</a></li>
+          <li class="pie-lista"><a href=#>Contacto</a></li>
+        </ul>
       </div>  
     </footer>
     <!-- Boostrap -->
