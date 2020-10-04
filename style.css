@@ -1,19 +1,22 @@
-
 *{
-	margin: 15px;
-	max-width: 1920px;
+
+	max-width: 97vw;
 }
+
 body {
 	font-family: 'Poppins', sans-serif;
 	color: #1e2126;
-	margin:10px 10px 10px 10px;
+	margin-left: 15px;
+	
 }
+
 
 
 h1 {
 	font-size: 66px;
 	font-weight: bold;
 	line-height: 80px;
+	padding-bottom: 80px;
 }
 
 
@@ -21,11 +24,14 @@ h2 {
 	font-size: 55px;
 	font-weight: bold;
 	line-height: 50px;
+	padding-bottom: 30px;
+	padding-top: 10px;
   }
 
 h3 {
 	font-size: 16px;
 	font-weight: bold;
+	padding-top: 10px;
 
 }
 h4 {
@@ -42,28 +48,68 @@ p {
 
 section {
 	padding: 80px 0;
-	margin-bottom: 0;
-	width: 100vw;	
+	margin-bottom: 10px;
+	width: 100%;
+	margin-left: 5px;
+	
 }
 
 footer {
-	padding: 10px;
+	padding: 40px;
 }
 
 
 
 nav {
 	background-color: white;
-	margin-left: 10px;
-	margin-right: 10px;
-	widows: 100vw;
+	width: 100vw !important;
+
 	}
+
+
+.navbar {
+	position: relative; 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+
+/*.menu-propio {
+	width: 100vw;
+	min-width: 375px;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	border-bottom: #364d53 3px solid;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 30px;
+	
+}
+
+*/
+
+.container {
+
+	border-bottom: #364d53 2px solid;
+	padding-bottom: 80px;
+	padding-top: 80px;
+
+}
+
 
 .container {
 	display: flex;
 	align-content: space-between;
 	height: 80px;
-	width: 1920px !important;
+	width: inherit;
 	margin-left: 0;
 	margin-right: 0;
 
@@ -104,12 +150,10 @@ hr {
 	margin-left:20px;
 	margin-right: 20px;
 	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 
-.hijo {
-	width: 50%;
-	
-}
 
 .parrafo {
 	margin-top: 8px;
@@ -151,7 +195,7 @@ hr {
     width: 285px;
     height: 50px;
     padding-top: 6px; 
-    margin-top: 10px;
+    margin-top: 40px;
 	}
 
 .boton-cv:hover{
@@ -169,14 +213,17 @@ hr {
 
 .nav-link {
 	color: #002858;
+	font-size: 18px;
+	margin-left: 30px;
 }
+
 
 .nav-link:hover {
 	color: #8B8888;
 }
 
 .logo-brand {
-	width: 200px;
+	width: 300px;
 }
 
 .navbar-toggler {
@@ -205,12 +252,17 @@ nav {
 	height: 530px;
 	background-color: #E2E2E2;
 	display: flex;
-	margin-left:20px;
-	margin-right: 20px;
+	width: 100vw;	
 	margin-bottom: 130px;
 	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
 
+.hijo-soy-yo {
+	width: 40%;
+	margin-left: 40px;	
+}
 
 .educacion {
 	text-align: center;
@@ -311,17 +363,21 @@ nav {
 	font-weight: thin;
 	display: flex;
 	align-content: space-around;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	flex-wrap: nowrap;
-	widows: 100%;
+	flex-wrap: wrap;
+	width: 100vw;
+
+	}
+
+.h2-cursos {
+	width: 200px;
 
 
 }
 
-.cursos-hijo {
-	margin:0;
-}
+
+
 
 .pink-line {
 	width: 280px;
@@ -335,14 +391,20 @@ nav {
 
 
 .skills {
+
 	display: flex;
-	align-content: center;
+	align-content: space-around;
 	align-items: flex-start;
 	justify-content: space-around;
 	font-weight: bold;
 	font-size: 15px;
 	text-align: center;
+	flex-wrap: wrap;	
 
+}
+
+.skills-hijo {
+	width: 200px;
 }
 
 .iconos-skills {
@@ -360,8 +422,8 @@ nav {
 
 
 .portada-proyecto {
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 }
 
 .proyectos {
@@ -370,11 +432,14 @@ nav {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+	margin: 20px;
 }
 
 .proyectos-hijo {
-	width: 25%;
+	width: 500px;
 	margin-bottom: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 
@@ -450,15 +515,9 @@ nav {
 }
 
 
-.congresos {
-	background-color: #E2E2E2;
 
-}
-
-.congresos-hijo {
-	width: 50px;
-	height: 50px;
-
+.foto-congresos {
+	width: 300px;
 }
 
 
@@ -477,6 +536,7 @@ nav {
 	cursor: pointer;
 	text-align: left;
 	font-weight: bold;
+	width: 85%;
 }
 
 .acordeon__titulo:hover {
@@ -490,10 +550,14 @@ nav {
 	margin: 0;
 	padding-left: 30px;
 	font-weight: thin;
-	transition: all 0.5s; 
+	transition: all 0.5s;
+	width: 85%; 
 
 }
 
+.acordeon {
+	padding-left: 25px;
+}
 
 .acordeon input:checked ~ .acordeon__contenido{
 	height: auto;
@@ -510,11 +574,11 @@ nav {
 	height: auto;
 	background-color: #E2E2E2;
 	display: flex;
-	margin-left:20px;
-	margin-right: 20px;
+	width: 100vw;
 	margin-bottom: 130px;
 	align-items: flex-start;
 	margin-top: 0;
+	flex-wrap: wrap;
 }
 
 
@@ -522,8 +586,7 @@ nav {
 	height: 20px;
 	background-color: #E2E2E2;
 	display: flex;
-	margin-left:20px;
-	margin-right: 20px;
+	width: 100vw;
 	margin-bottom: 0;
 	align-items: flex-start;
 	margin-top: 150px;
@@ -531,6 +594,7 @@ nav {
 	padding-bottom: 5;
 	padding-left: 50px;
 	padding-right: 50px;
+
 }
 
 
@@ -551,58 +615,161 @@ nav {
 
 
 .hijo-congresos {
-	width: 50%;
-	padding-left: 50px;
-	padding-right: 50px;
+	width: 500px;
+	padding-left: 25px;
+	padding-right: 20px;
+	margin-bottom: 25px;
 	
 }
 
 
 .contacto {
-	height: auto;
+
 	background-color: white;
 	display: flex;
-	margin-left:20px;
 	margin-right: 20px;
 	margin-bottom: 130px;
-	align-items: flex-start;
+	align-items: center;
+	align-content: space-between;
+	justify-content: center;
 	margin-top: 0;
+	flex-wrap: wrap;
+
+
+}
+
+.foto-contacto {
+	
+	width: 350px;
 }
 
 
 .hijo-contacto {
-	width: 50%;
-	padding-left: 50px;
-	padding-right: 50px;
-	
+	width: 500px;
+
 }
 
+
+form input {
+	width: 500px;
+	background-color: #e2e2e2;
+	color: #1e2126;
+	font-weight: bold;
+	border: none;
+	height: 40px;
+}
+
+form textarea {
+	width: 500px;
+	background-color: #e2e2e2;
+	color: #1e2126;
+	font-weight: bold;
+	border: none;
+	height: 100px;
+}
+
+.boton-form {
+	background-color: rgb(30, 33, 38);
+	color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: white;
+    display: block;
+    width: 150px;
+    height: 50px;
+    padding-top: 6px; 
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.label {
+	font-weight: bold;
+	margin-left: 5px;
+	display: block !important;
+}
+label {
+	display: block;
+}
 
 .pie {
 	display: flex;
 	justify-content: space-between;
-	align-items: space-between;
+	align-items: center;
+	align-content: center;
 	background-color: #1e2126;
 	color: white;
-	height: 300px;
+	height: auto;
+	flex-wrap: wrap;
+	width: 100vw;
+	margin-bottom: 0px;
+	margin-top: 0;
+
+
 }
 
 
-.pie-hijo {
+.pie-hijo-izq {
 	text-align: space-between;
 	align-content: space-between;
 	align-items: center;
-	width: 100%;
+	width: 500px;
 	color: white;
+	margin-top: 40px;
+	padding-left: 80px;
 }
 
-.pie-hijo ul li a {
+.pie-hijo-izq ul li a {
 	color: white;
 	text-decoration: none;
 	list-style-type: none;
 }
 
-.pie-hijo ul {
+.pie-hijo-izq ul li {
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+	padding-bottom: 8px;
+}
+
+
+
+
+.pie-hijo-izq ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pie-hijo-der {
+	text-align: space-between;
+	align-content: space-between;
+	align-items: center;
+	width: 200px;
+	color: white;
+	margin-top: 40px;
+	padding-left: 80px;
+}
+
+.pie-hijo-der ul li a {
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.pie-hijo-der ul li {
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+	padding-bottom: 8px;
+}
+
+
+
+
+.pie-hijo-der ul {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
@@ -629,41 +796,426 @@ nav {
 
 
 .logo-pie {
-	width: 120px;
+	width: 250px;
 	height: auto;
 	display: inline-block;
+	margin-bottom: 30px;
 }
 
 
 
-@media (max-width: 575.98px) {
+.pie-hijo-izq {
+	margin-top: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+
+.pie-hijo-der {
+	margin-top: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+
+
+
+
+/* a partir de aca es responsive */
+
+
+@media (min-width: 300px) and (max-width: 991px){
+
+	body {
+		margin: 3px;
+	}
+
 
 	  h1 {
 	  		font-size: 40px;
   			line-height: normal;} 
 
+  		h2 {
+  			font-size: 35px;
+  		}
+  		
+
   		h5 span {
   			display: none;
   		}
+
+  		.hero-index {
+  			padding-bottom: 15px;
+  		}
+
   		
+  		.educacion {
+  			margin-top: 15px;
+  			padding-top: 0;
   		}
 
 
-@media (max-width: 767.98px) {
+
+  		.logo-brand {
+  			width: 150px;
+  		}
+  		
+
+  		.menu-propio {
+  			width: 375px;
+  		}
+
+  		.padre {
+  			flex-wrap: wrap;
+  			align-content: center;
+  			justify-content: center;
+  		  		
+  		}
+
+  		.nav-item {
+  			background-color: white;
+  			font-size: 12px;
+  			border-color: white;
+  			border-style: solid;  		
+  		}
+
+  		.ilustracion {
+  			max-width: 300px;
+  		}
+
+
+
+  		 .foto-lu {
+				height: 300px;
+				width: 336.53px;
+			}
+
+		.soy-yo {
+				flex-wrap: wrap;
+				height: auto;
+				margin-right: 0;
+				width: 98vw;
+
+			}
+
+			.hijo-soy-yo {
+				margin-bottom: 30px;
+				width: 300px;
+				margin-top: 30px;
+			}
+
+			.hijo {
+				margin-bottom: 50px;
+			}
+
+			.ilustracion {
+				width: 375px;
+				height: auto;
+				margin:0;
+				padding: 0;
+			}
+			.timeline ul {
+				width: 350px;
+				padding-left: 0;
+				margin-left: 0;
+			}
+
+			.timeline ul li {
+				margin-left: 0;
+			}
+
+			.timeline ul li div {
+				width: 250px;
+			}
+
+
+			/*Estilos de elementos pares*/
+.timeline ul li:nth-child(even) div {
+  left: 30px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #1e2126 transparent transparent;
+}
+  		 }
+
+ .timeline ul li {
+ 	padding-bottom: 40px;
+ 	background-color: #d39d90;
+ 	widows: 2px;
+
+ }
+
+.foto-contacto {
+	width: 380px;
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+
+}
+
+.lista-cursos {
+	padding-left: 0;
+}
+
+.curso-hijo {
+	min-width: 288px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.cursos {
+	padding-bottom: 30px;
+	padding-top: 40px;
+
+}
+
+.curso-hijo h2{
+	padding-bottom: 0;
+	margin: 0;
+}
+
+.pink-line {
+	margin-bottom: 20px;
+}
+
+.educacion {
+	margin-top: 60px;
+}
+
+/*.skills {
+	flex-wrap: wrap;
+	padding-top: 15px;
+	padding-bottom: 0;
+
+}*/
+
+.iconos-skills {
+	width: 100px;
+}
+
+/*.skills-hijo {
+	margin-top: 20px;
+	width: 60%;
+}*/
+
+h6 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+/*.mis-proyectos {
+	margin-top: 70px;
+}
+
+.proyectos-hijo {
+	width: 80%;
+}
+
+*/
+
+/*
+.congresos-head {
+	margin-top: 0;
+}
+
+
+.congresos {
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	
+
+}
+
+.hijo-congresos {
+	width: 300px;
+	margin-top: 20px;
+}
+
+.foto-congresos {
+	width: 100%
+}
+
+.acordeon {
+	margin-top: 40px;
+	padding-left: 20px;
+}
+
+
+
+.contacto-head {
+	margin-top: 40px;
+	padding: 0;
+	height: 150px;
+}
+*/
+/*
+.contacto {
+	margin-top: 0;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+	margin-left: 0;
+}
+
+.foto-contacto {
+	max-width: 300px;
+}
+
+
+.hijo-contacto {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width: 300px;
+}
+
+.hijo-contacto input {
+	width: 300px;
+}
+
+.hijo-contacto textarea {
+	width: 300px;
+}
+
+*/
+.timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+.timeline {
+	padding-left: 20px;
+}
+
+
+
+
+
+footer {
+	padding: 0;
+
+}
+
+
+/*.pie {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 5px;
+	height: auto;
+	justify-content: center;
+	margin-bottom: 0;
+	align-content: center;
+}*/
+
+
+
+
+
+  		}
+
+
+/* @media (max-width: 767.98px) {
 
 	h5 span {
   			display: none;
   		}
 
+
+
+  		.padre {
+  			flex-wrap: wrap;
+  			justify-content: flex-start;
+  			align-items: stretch;  		}
+
+
+  		 .foto-lu {
+				height: 300px;
+				width: 336.53px;
+			}
+
+		.soy-yo {
+				flex-wrap: wrap;
+			}
+
+			.hijo-soy-yo {
+				margin-bottom: 500px;
+				width: 300px;
+				}
+
+
+			.hijo {
+				margin-bottom: 100px;
+			}
+
+			.ilustracion {
+				width: 375px;
+				height: auto;
+				margin:0;
+				padding: 0;
+			}
+			.timeline ul {
+				width: 350px;
+				padding-left: 0;
+				margin-left: 0;
+			}
+
+			.timeline ul li {
+				margin-left: 0;
+			}
+
+			.timeline ul li div {
+				width: 250px;
+			}
+
+
+			.educacion {
+				padding-top: 800px;
+			}
+
+			
+.timeline ul li:nth-child(even) div {
+  left: 30px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #1e2126;
+}
   		 }
 
+*/
 
-@media (max-width: 991.98px) { 
+
+/* large devices 
+@media (min-width: 992px) and (max-width: 1199px) { 
 
 		h5 span {
   			display: none;
   		}
 
+  		.padre {
+  			flex-wrap: wrap;
+  			justify-content: flex-start;
+  			align-items: stretch;  		}
+
   		 }
 
-@media (max-width: 1199.98px) { ... }
+@media (max-width: 1199.98px) { ... } */ 
