@@ -422,8 +422,11 @@ nav {
 
 
 .portada-proyecto {
-	width: 100px;
-	height: 100px;
+	width: 500px;
+	height: 320px;
+	padding-right: 10px;
+	min-width: 320px;
+	
 }
 
 .proyectos {
@@ -440,6 +443,7 @@ nav {
 	margin-bottom: 100px;
 	margin-left: 10px;
 	margin-right: 10px;
+	padding-right: 10px;
 }
 
 
@@ -953,9 +957,10 @@ label {
   			border-style: solid;  		
   		}
 
-  		.ilustracion {
-  			max-width: 300px;
-  		}
+  		/*.ilustracion {
+  			max-width: 250px;
+
+  		}*/
 
 
 
@@ -980,11 +985,12 @@ label {
 
 			.hijo {
 				margin-bottom: 50px;
+				max-width: 350px;
 			}
 
-			.ilustracion {
-				width: 375px;
-				height: auto;
+			.compu {
+				width: 350px;
+				height: 205px;
 				margin:0;
 				padding: 0;
 			}
